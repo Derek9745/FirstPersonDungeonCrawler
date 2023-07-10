@@ -56,21 +56,26 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\InventoryUI.cs" />
-    <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\InventorySlot.cs" />
-    <Compile Include="Assets\Shoot.cs" />
+    <Compile Include="Assets\Scripts\InventoryUI.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\InventorySlot.cs" />
+    <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Items\Item.cs" />
-    <Compile Include="Assets\ItemMovement.cs" />
-    <Compile Include="Assets\enemyEncounterScript.cs" />
-    <Compile Include="Assets\MenuScript.cs" />
-    <Compile Include="Assets\Pickup.cs" />
-    <Compile Include="Assets\GameManagerScript.cs" />
+    <Compile Include="Assets\Scripts\ItemMovement.cs" />
+    <Compile Include="Assets\Scripts\enemyEncounterScript.cs" />
+    <Compile Include="Assets\Scripts\MenuScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Pickup.cs" />
+    <Compile Include="Assets\Scripts\AmmoBarScript.cs" />
+    <Compile Include="Assets\Scripts\DamageFloor.cs" />
+    <Compile Include="Assets\Scripts\GameManagerScript.cs" />
+    <Compile Include="Assets\Scripts\TargetScript.cs" />
     <Compile Include="Assets\LevelGenerator.cs" />
-    <Compile Include="Assets\InventoryManagerScript.cs" />
-    <Compile Include="Assets\Interactable.cs" />
-    <Compile Include="Assets\Bullet.cs" />
-    <Compile Include="Assets\HealthBarScript.cs" />
+    <Compile Include="Assets\Scripts\TargetObject.cs" />
+    <Compile Include="Assets\Scripts\InventoryManagerScript.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\HealthBarScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
