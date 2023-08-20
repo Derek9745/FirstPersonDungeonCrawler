@@ -11,28 +11,19 @@ public class Shoot : MonoBehaviour
     public bool canShoot = true;
     public GameObject weapon;
     public GameObject bulletPrefab;
-    public float bulletForce = 20f;
-    private BulletObjectPool _pool;
-
-
-    private void Start()
-    {
-        _pool = gameObject.AddComponent<BulletObjectPool>();
-      
-    }
-
-
+    public float bulletForce = 40f;
+   
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetMouseButtonDown(0))
         {
             if (InventoryManagerScript.instance.currentAmmo != 0)
             {
                 if (canShoot == true)
                 {
-                    _pool.spawn();
-                    //spawnBullet();
+                    
+                    spawnBullet();
                     StartCoroutine(ReloadBullet());
                 }
             }
@@ -47,10 +38,6 @@ public class Shoot : MonoBehaviour
         InventoryManagerScript.instance.RemoveAmmo(1);
         
     }
-
-
-
-
 
     IEnumerator ReloadBullet()
     {
