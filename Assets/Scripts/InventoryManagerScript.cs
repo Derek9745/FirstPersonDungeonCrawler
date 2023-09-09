@@ -12,6 +12,8 @@ public class InventoryManagerScript : MonoBehaviour
     public int space = 20;
     public int defaultAmmo = 0;
     public int currentAmmo;
+    private Animation anim;
+    public Image image;
 
     private void Awake()
     {
@@ -27,6 +29,7 @@ public class InventoryManagerScript : MonoBehaviour
 
     private void Start()
     {
+        anim = image.GetComponent<Animation>();
         currentAmmo = defaultAmmo;
     }
 

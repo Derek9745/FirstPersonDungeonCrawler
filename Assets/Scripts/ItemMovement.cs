@@ -21,7 +21,7 @@ public class ItemMovement : MonoBehaviour
     {
 
         tempPos = posOffset;
-        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
+        tempPos.y += Mathf.Cos(Time.fixedTime * Mathf.PI * frequency) * amplitude;
         transform.position = tempPos;
         transform.Rotate(1f, 5 * Time.deltaTime, 1f, Space.Self);
     }

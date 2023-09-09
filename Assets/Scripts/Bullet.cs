@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
 {
     
     [SerializeField] private float timeToSelfDestruct = 5f;
-   
+    
   
 
     private void Start()
@@ -22,33 +22,15 @@ public class Bullet : MonoBehaviour
 
     private void OnEnable()
     {
-        StartCoroutine(SelfDestruct());
-    }
-
-   IEnumerator SelfDestruct()
-    {
-        yield return new WaitForSeconds(timeToSelfDestruct);
+        Destroy(gameObject, timeToSelfDestruct);
        
     }
 
 
     private void OnCollisionEnter(Collision collision)
     {
-        
-        if (collision.gameObject.tag == "Target")
-        {
-            Destroy(collision.gameObject);
-        }
-
-        if (collision.gameObject.tag == "Enemy")
-        {
-            Destroy(collision.gameObject);
-        }
-
         Destroy(gameObject);
-
-     
-
+      
     }
 
    

@@ -33,6 +33,7 @@ public class Shoot : MonoBehaviour
     void spawnBullet()
     {
         GameObject bullet = Instantiate(bulletPrefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        bullet.gameObject.tag = "Bullet";
         Rigidbody wb = bullet.GetComponent<Rigidbody>();
         wb.AddForce(spawnPoint.forward * bulletForce, ForceMode.Impulse);
         InventoryManagerScript.instance.RemoveAmmo(1);

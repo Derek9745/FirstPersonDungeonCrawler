@@ -5,14 +5,15 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public int MoveSpeed = 5;
-    //public CharacterController controller;
     public Rigidbody rb;
     Vector3 move;
     public float turnSmoothTime = 0.5f;
     public float turnSmoothVelocity;
-    public float jumpForce = 500f;
-    public bool canJump = true;
-
+    public float jumpForce = 300f;
+   public bool grounded;
+    public float distToGround = .1f;
+    public LayerMask layermask;
+    public Transform player;
 
 
     void Start()
@@ -24,39 +25,29 @@ public class PlayerMovement : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
-         move = transform.right * x + transform.forward * z;
-
-
-        //controller.Move(move * MoveSpeed * Time.deltaTime);
-       
-        //velocity.y += gravity;
-        //controller.Move(velocity);
-
+        move = transform.right * x + transform.forward * z;
+        isGrounded();
 
     }
 
     private void FixedUpdate()
     {
-        
-        Move();
-         if(canJump == true)
-          {
+  
+         if(isGrounded() == true){
+            grounded = true;
             if (Input.GetKey(KeyCode.Space))
             {
                 rb.AddForce(transform.up * jumpForce);
-                canJump = false;
-
-             }
-         }
-       
-        
-
-
+            }  
+        }
+        else
+            grounded = false;
+        Move();
     }
 
     private void Move()
     {
-
+        
 
         rb.MovePosition(rb.position + move.normalized * MoveSpeed * Time.fixedDeltaTime);
 
@@ -78,12 +69,15 @@ public class PlayerMovement : MonoBehaviour
         // }
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
+    //void OnCollisionEnter(Collision collision)
+   // {
 
-        canJump = true;
-    }   
-    
+       // grounded = true;
+    //}  
+    bool isGrounded()
+    {
+        return Physics.Raycast(player.transform.position, Vector3.down,distToGround, layermask);
+    }
 
 
 
