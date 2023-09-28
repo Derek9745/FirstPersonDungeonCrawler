@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\InventoryUI.cs" />
-    <Compile Include="Assets\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\EffectObject.cs" />
     <Compile Include="Assets\Scripts\InventorySlot.cs" />
@@ -69,9 +69,11 @@
     <Compile Include="Assets\Scripts\enemyEncounterScript.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\MenuScript.cs" />
-    <Compile Include="Assets\Scripts\enemyDestruction.cs" />
+    <Compile Include="Assets\enemyDestruction.cs" />
+    <Compile Include="Assets\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
+    <Compile Include="Assets\Scripts\Extensions.cs" />
     <Compile Include="Assets\Scripts\EnemyAIScript.cs" />
     <Compile Include="Assets\Scripts\AmmoBarScript.cs" />
     <Compile Include="Assets\Scripts\Save System.cs" />
@@ -80,10 +82,10 @@
     <Compile Include="Assets\Scripts\TargetScript.cs" />
     <Compile Include="Assets\Scripts\LevelGenerator.cs" />
     <Compile Include="Assets\Scripts\TargetObject.cs" />
-    <Compile Include="Assets\HeadBobController.cs" />
+    <Compile Include="Assets\Scripts\HeadBobController.cs" />
     <Compile Include="Assets\Scripts\DamageScript.cs" />
     <Compile Include="Assets\Scripts\InventoryManagerScript.cs" />
-    <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />

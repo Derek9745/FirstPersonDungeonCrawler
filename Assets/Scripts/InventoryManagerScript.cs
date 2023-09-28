@@ -12,8 +12,8 @@ public class InventoryManagerScript : MonoBehaviour
     public int space = 20;
     public int defaultAmmo = 0;
     public int currentAmmo;
-    private Animation anim;
-    public Image image;
+    public Dialogue dialogue;
+    
 
     private void Awake()
     {
@@ -29,7 +29,6 @@ public class InventoryManagerScript : MonoBehaviour
 
     private void Start()
     {
-        anim = image.GetComponent<Animation>();
         currentAmmo = defaultAmmo;
     }
 
@@ -40,6 +39,7 @@ public class InventoryManagerScript : MonoBehaviour
         if (!item.isDefaultItem)
         {
             items.Add(item);
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             SetAmmo(5);
         }
     }

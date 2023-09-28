@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.Substance.Runtime", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adobe.SubstanceEditor", "Adobe.SubstanceEditor.csproj", "{755906D8-CAD4-40D9-6BB3-6C25251CDA97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{BC092BDC-5935-0B3C-DEF2-AE4FA99E06FF}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstPersonDungeonCrawler", "FirstPersonDungeonCrawler\FirstPersonDungeonCrawler.vcxproj", "{57571793-BF11-47DB-A9BA-049C9AA938C7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{9B743A06-56DC-42C2-99B1-B11DE6C02BBD} = {9B743A06-56DC-42C2-99B1-B11DE6C02BBD}
@@ -40,6 +42,10 @@ Global
 		{755906D8-CAD4-40D9-6BB3-6C25251CDA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{755906D8-CAD4-40D9-6BB3-6C25251CDA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{755906D8-CAD4-40D9-6BB3-6C25251CDA97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC092BDC-5935-0B3C-DEF2-AE4FA99E06FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC092BDC-5935-0B3C-DEF2-AE4FA99E06FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC092BDC-5935-0B3C-DEF2-AE4FA99E06FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC092BDC-5935-0B3C-DEF2-AE4FA99E06FF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{57571793-BF11-47DB-A9BA-049C9AA938C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{57571793-BF11-47DB-A9BA-049C9AA938C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57571793-BF11-47DB-A9BA-049C9AA938C7}.Release|Any CPU.ActiveCfg = Release|Any CPU

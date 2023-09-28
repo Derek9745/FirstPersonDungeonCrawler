@@ -11,7 +11,8 @@ public class Shoot : MonoBehaviour
     public bool canShoot = true;
     public GameObject weapon;
     public GameObject bulletPrefab;
-    public float bulletForce = 40f;
+    public float bulletForce = 50f;
+    public Animator animate;
    
 
     void Update()
@@ -22,7 +23,7 @@ public class Shoot : MonoBehaviour
             {
                 if (canShoot == true)
                 {
-                    
+                   // animate.Play("GunFire");
                     spawnBullet();
                     StartCoroutine(ReloadBullet());
                 }

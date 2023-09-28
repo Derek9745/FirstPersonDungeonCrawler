@@ -21,7 +21,7 @@ public class GameManagerScript : MonoBehaviour
 
     private void Awake()
     {
-        textBox.SetActive(false);
+        //textBox.SetActive(false);
         if (instance == null)
         {
             instance = this;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemyDestruction : MonoBehaviour
 {
     public ParticleSystem deathParticles;
-    public float time = 5;
+   
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -17,9 +17,10 @@ public class enemyDestruction : MonoBehaviour
 
     void RemoveObject()
     {
-        Instantiate(deathParticles, transform.position, Quaternion.identity);
-        Destroy(gameObject);
-        GameManagerScript.instance.enemyCount -= 1;
+ 
+     Instantiate(deathParticles, transform.position, Quaternion.identity);
+     Destroy(gameObject);
+     GameManagerScript.instance.enemyCount -= 1;
         
     }
 

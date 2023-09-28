@@ -7,18 +7,7 @@ public class Bullet : MonoBehaviour
 {
     
     [SerializeField] private float timeToSelfDestruct = 5f;
-    
-  
 
-    private void Start()
-    {
-       
-    }
-
-    void Update()
-    {
-        
-    }
 
     private void OnEnable()
     {

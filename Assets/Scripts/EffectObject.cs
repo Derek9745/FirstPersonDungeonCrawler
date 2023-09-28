@@ -8,9 +8,9 @@ public class EffectObject : MonoBehaviour
     public float time = 5;
     void Start()
     {
-        Destroy(gameObject, time);
+        //Destroy(gameObject, time);
     }
 
    
-    
+   
 }
